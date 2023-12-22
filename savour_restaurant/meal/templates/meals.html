@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="container mt-5">
+<div class="mycard row ms-5">
+  {% for i in categories %}
+  <div class="col-md-4 mb-5">
+  <div class="card" style="width: 18rem">
+    <img src="{{i.strCategoryThumb}}" class="card-img-top" alt="meal_image" />
+    <div class="card-body">
+      <h5 class="card-title">{{i.strCategory}}</h5>
+      <p class="card-text">
+        {{i.strCategoryDescription | truncatewords:10}}
+      </p>
+    </div>
+  </div>
+</div>
+{% endfor %}
+</div>
+</div>
+
+{% endblock %}

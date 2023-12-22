@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="mt-5">
+        <div class="container">
+        <div class="row">
+            <div class="left col-6">
+                <h1>Savour the Extraordinary
+                </h1>
+                <p class="desc">Welcome to Savour, where every dish is a masterpiece and every moment is an indulgence. Immerse yourself in a world of exquisite flavors, meticulously crafted by our culinary artisans.</p>
+            </div>
+            <div class="col-6">
+            <img class="myimg img-fluid" src="{% static 'images/home_img.jpg' %}" alt="">
+
+            </div>
+        </div>
+    </div></div>
+{% endblock %}
